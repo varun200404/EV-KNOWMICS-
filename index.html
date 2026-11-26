@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV KNOWMICS — Intelligent Electric Mobility, Specs, Ratings &amp; AI Advisor</title>
+  <meta name="description" content="EV KNOWMICS: Luxury electric vehicles, real-world driver ratings, full technical specifications, seasonal promotions, interactive range sliders, and KnoBot AI Advisor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Announcement Promo Strip -->
+  <div class="promo-top-bar">
+    <div class="container promo-top-inner">
+      <span class="promo-badge">LIMITED LAUNCH OFFER</span>
+      <p><strong>0% APR for 36 Months</strong> + <strong>$5,000 Clean Mobility Bonus</strong> &amp; 3 Years Free HyperCharge</p>
+      <a href="#promotions" class="promo-top-link">Claim Offer &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="EV KNOWMICS Home">
+        <svg class="brand-svg" viewBox="0 0 88 64" width="52" height="38" aria-hidden="true">
+          <defs>
+            <linearGradient id="wingSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="55%" stop-color="#CBD5E1" />
+              <stop offset="100%" stop-color="#64748B" />
+            </linearGradient>
+            <linearGradient id="coreEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00F0FF" />
+              <stop offset="55%" stop-color="#10B981" />
+              <stop offset="100%" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+          <!-- Stepped Pixel Aero Wings -->
+          <path d="M26 24 H8 L12 28 H26 Z M26 30 H12 L16 34 H26 Z M26 36 H16 L20 40 H26 Z" fill="url(#wingSilver)" />
+          <path d="M62 24 H80 L76 28 H62 Z M62 30 H76 L72 34 H62 Z M62 36 H72 L68 40 H62 Z" fill="url(#wingSilver)" />
+          <!-- Platinum Crest Shield -->
+          <path d="M44 6 L62 15 V37 L44 57 L26 37 V15 Z" fill="#0A101D" stroke="url(#wingSilver)" stroke-width="2.8" stroke-linejoin="round" />
+          <!-- Crystal Lightning Bolt -->
+          <path d="M46 13 L33 33 H43 L39 49 L55 27 H45 Z" fill="url(#coreEmerald)" />
+          <rect x="42" y="8" width="4" height="3" fill="#00F0FF" />
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">EV <strong>KNOWMICS</strong></span>
+          <span class="brand-tag">PIXEL &amp; ELECTRIC INTELLIGENCE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#about">About Us</a>
+        <a href="#lineup">Cars</a>
+        <a href="#specifications">Specifications</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#ratings">Ratings</a>
+        <a href="#economics">TCO Sliders</a>
+        <a href="#ai-advisor">AI Advisor</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost btn-sm mode-toggle-btn" id="visualModeToggle" type="button" title="Switch between HD Pixel Art and Studio Photography">Style: HD Pixel Art</button>
+        <button class="btn btn-ghost btn-sm" id="openCompareBtn" type="button">Compare Matrix</button>
+        <button class="btn btn-primary btn-sm" id="navOpenChatBtn" type="button">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Ask KnoBot AI
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#about">About Us</a>
+      <a href="#lineup">Cars</a>
+      <a href="#specifications">Specifications</a>
+      <a href="#promotions">Promotions</a>
+      <a href="#ratings">Ratings</a>
+      <a href="#economics">TCO Sliders</a>
+      <a href="#ai-advisor">AI Advisor</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO FULL-BLEED BIG BANNER SLIDER -->
+    <section class="hero-slider-section" id="hero" aria-label="Featured EV Models Slider">
+      <div class="hero-slides" id="heroSlides">
+        <!-- Slide 1: Apex GT -->
+        <article class="hero-slide is-active" data-model="Apex GT" data-pixel-bg="assets/pixel-apex-gt.jpg" data-photo-bg="assets/banner-apex-gt.jpg" style="--bg-img: url('assets/pixel-apex-gt.jpg')">
+          <div class="hero-backdrop"></div>
+          <div class="hero-scrim"></div>
+          <div class="container hero-content">
+            <div class="hero-badge-row">
+              <span class="pill pill-cyan">FLAGSHIP PERFORMANCE SEDAN</span>
+              <span class="pill pill-gold">&#9733; 4.9 / 5 OWNER RATED</span>
+              <span class="pill pill-emerald">0% APR LAUNCH OFFER</span>
+            </div>
+            <h1 class="hero-title">KNOWMICS <span class="accent-gradient">APEX GT</span></h1>
+            <p class="hero-subtitle">Zero Emissions. Infinite Velocity. Precision-engineered tri-motor aerodynamics paired with next-gen 900V solid-core range economics.</p>
+
+            <div class="hero-spec-grid">
+              <div class="hero-spec-card">
+                <span class="spec-label">WLTP Range</span>
+                <strong class="spec-value">820 km</strong>
+                <span class="spec-sub">120 kWh Solid-Core</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">0–100 km/h</span>
+                <strong class="spec-value">1.98 s</strong>
+                <span class="spec-sub">1,120 HP Tri-Motor</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">10–80% Charge</span>
+                <strong class="spec-value">12 min</strong>
+                <span class="spec-sub">350 kW Peak DC</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Starting From</span>
+                <strong class="spec-value">$78,900</strong>
+                <span class="spec-sub">$5k Bonus Eligible</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-primary ask-model-btn" data-prompt="Tell me everything about the EV Knowmics Apex GT specs, charging speed, and real-world range." type="button">
+                Ask AI About Apex GT
+              </button>
+              <a href="#specifications" class="btn btn-outline">Full Specifications</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2: Terra X -->
+        <article class="hero-slide" data-model="Terra X" data-pixel-bg="assets/pixel-terra-x.jpg" data-photo-bg="assets/banner-terra-x.jpg" style="--bg-img: url('assets/pixel-terra-x.jpg')">
+          <div class="hero-backdrop"></div>
+          <div class="hero-scrim"></div>
+          <div class="container hero-content">
+            <div class="hero-badge-row">
+              <span class="pill pill-emerald">ALL-TERRAIN 7-SEAT SUV</span>
+              <span class="pill pill-gold">&#9733; 4.9 / 5 FAMILY PICK</span>
+              <span class="pill pill-dark">DUAL-MOTOR AWD</span>
+            </div>
+            <h2 class="hero-title">KNOWMICS <span class="accent-gradient-emerald">TERRA X</span></h2>
+            <p class="hero-subtitle">Engineered for Every Horizon. Seven-seat intelligence with adaptive air suspension, 3,500 kg towing, and 9.6 kW home power backup.</p>
+
+            <div class="hero-spec-grid">
+              <div class="hero-spec-card">
+                <span class="spec-label">WLTP Range</span>
+                <strong class="spec-value">740 km</strong>
+                <span class="spec-sub">118 kWh Long-Range</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">0–100 km/h</span>
+                <strong class="spec-value">3.1 s</strong>
+                <span class="spec-sub">840 HP Dual AWD</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Home Backup</span>
+                <strong class="spec-value">9.6 kW</strong>
+                <span class="spec-sub">V2H / V2L Ready</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Starting From</span>
+                <strong class="spec-value">$64,500</strong>
+                <span class="spec-sub">Free Home Wallbox</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-primary ask-model-btn" data-prompt="Compare the Terra X SUV with family electric SUVs. What is its winter range and towing capacity?" type="button">
+                Ask AI About Terra X
+              </button>
+              <a href="#promotions" class="btn btn-outline">View SUV Promotions</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3: Pulse One -->
+        <article class="hero-slide" data-model="Pulse One" data-pixel-bg="assets/pixel-pulse-one.jpg" data-photo-bg="assets/banner-pulse-one.jpg" style="--bg-img: url('assets/pixel-pulse-one.jpg')">
+          <div class="hero-backdrop"></div>
+          <div class="hero-scrim"></div>
+          <div class="container hero-content">
+            <div class="hero-badge-row">
+              <span class="pill pill-cyan">URBAN SMART CROSSOVER</span>
+              <span class="pill pill-gold">&#9733; 4.8 / 5 VALUE WINNER</span>
+              <span class="pill pill-dark">LFP LONG-LIFE CELL</span>
+            </div>
+            <h2 class="hero-title">KNOWMICS <span class="accent-gradient">PULSE ONE</span></h2>
+            <p class="hero-subtitle">Smart Economics. Daily Electric Freedom. Ultra-low $0.02/km running cost, agile city footprint, and L2+ autonomous urban co-pilot.</p>
+
+            <div class="hero-spec-grid">
+              <div class="hero-spec-card">
+                <span class="spec-label">City Range</span>
+                <strong class="spec-value">560 km</strong>
+                <span class="spec-sub">76 kWh LFP Pack</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Energy Cost</span>
+                <strong class="spec-value">$0.02/km</strong>
+                <span class="spec-sub">12.8 kWh / 100 km</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">10–80% Charge</span>
+                <strong class="spec-value">18 min</strong>
+                <span class="spec-sub">220 kW Fast Charge</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Starting From</span>
+                <strong class="spec-value">$34,900</strong>
+                <span class="spec-sub">3,000+ Cycle LFP</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-primary ask-model-btn" data-prompt="Why is Pulse One great for daily city commuting and what is its battery longevity?" type="button">
+                Ask AI About Pulse One
+              </button>
+              <a href="#economics" class="btn btn-outline">Calculate 5-Yr Savings</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 4: Apex GT Touring -->
+        <article class="hero-slide" data-model="Apex GT Touring" data-pixel-bg="assets/pixel-promo-banner.jpg" data-photo-bg="assets/car-apex-touring.jpg" style="--bg-img: url('assets/pixel-promo-banner.jpg')">
+          <div class="hero-backdrop"></div>
+          <div class="hero-scrim"></div>
+          <div class="container hero-content">
+            <div class="hero-badge-row">
+              <span class="pill pill-gold">EXECUTIVE GRAND TOURER</span>
+              <span class="pill pill-cyan">860 KM LONGEST RANGE</span>
+              <span class="pill pill-emerald">3 YRS FREE CHARGING</span>
+            </div>
+            <h2 class="hero-title">APEX GT <span class="accent-gradient-gold">TOURING</span></h2>
+            <p class="hero-subtitle">Designed for effortless cross-continent journeys with acoustic laminated glass, executive rear lounge, and 860 km uninterrupted range.</p>
+
+            <div class="hero-spec-grid">
+              <div class="hero-spec-card">
+                <span class="spec-label">Max Range</span>
+                <strong class="spec-value">860 km</strong>
+                <span class="spec-sub">120 kWh Aero Spec</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">0–100 km/h</span>
+                <strong class="spec-value">2.8 s</strong>
+                <span class="spec-sub">760 HP Dual AWD</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Cabin Silence</span>
+                <strong class="spec-value">54 dBA</strong>
+                <span class="spec-sub">Active Noise Cancel</span>
+              </div>
+              <div class="hero-spec-card">
+                <span class="spec-label">Starting From</span>
+                <strong class="spec-value">$69,400</strong>
+                <span class="spec-sub">Executive Package</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-primary ask-model-btn" data-prompt="Tell me about the Apex GT Touring 860 km range and executive interior features." type="button">
+                Ask AI About Touring
+              </button>
+              <a href="#ratings" class="btn btn-outline">Read Owner Reviews</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="hero-controls">
+        <div class="container hero-controls-inner">
+          <div class="hero-dots" id="heroDots" role="tablist" aria-label="Hero Banner Slides">
+            <button class="hero-dot is-active" data-slide="0" type="button" role="tab" aria-selected="true">
+              <span class="dot-num">01</span>
+              <span class="dot-label">Apex GT</span>
+            </button>
+            <button class="hero-dot" data-slide="1" type="button" role="tab" aria-selected="false">
+              <span class="dot-num">02</span>
+              <span class="dot-label">Terra X</span>
+            </button>
+            <button class="hero-dot" data-slide="2" type="button" role="tab" aria-selected="false">
+              <span class="dot-num">03</span>
+              <span class="dot-label">Pulse One</span>
+            </button>
+            <button class="hero-dot" data-slide="3" type="button" role="tab" aria-selected="false">
+              <span class="dot-num">04</span>
+              <span class="dot-label">GT Touring</span>
+            </button>
+          </div>
+          <div class="hero-arrows">
+            <button class="icon-btn" id="heroPrev" type="button" aria-label="Previous Banner">&#8592;</button>
+            <button class="icon-btn" id="heroNext" type="button" aria-label="Next Banner">&#8594;</button>
+          </div>
+        </div>
+        <div class="hero-progress-track">
+          <div class="hero-progress-bar" id="heroProgressBar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT US & PEOPLE USING EVs -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media-mosaic">
+            <figure class="mosaic-card mosaic-primary">
+              <img src="assets/pixel-people-charging.jpg" data-pixel-src="assets/pixel-people-charging.jpg" data-photo-src="assets/lifestyle-people-charging.jpg" alt="Smiling couple unplugging their EV Knowmics SUV at a sunlit solar charging lounge" loading="lazy" />
+              <figcaption>
+                <span class="pill pill-emerald">REAL-LIFE FREEDOM</span>
+                <strong>Solar HyperCharge Lounges</strong>
+                <span>12-minute top-ups built around real human journeys.</span>
+              </figcaption>
+            </figure>
+            <figure class="mosaic-card mosaic-secondary">
+              <img src="assets/pixel-people-cockpit.jpg" data-pixel-src="assets/pixel-people-cockpit.jpg" data-photo-src="assets/lifestyle-people-cockpit.jpg" alt="Driver enjoying the panoramic glass roof and OLED cockpit inside an EV Knowmics vehicle" loading="lazy" />
+              <figcaption>
+                <span class="pill pill-cyan">HUMAN-FIRST AI CABIN</span>
+                <strong>Panoramic Co-Pilot Experience</strong>
+                <span>Intuitive voice telemetry &amp; zero-stress highway cruising.</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="about-copy">
+            <span class="eyebrow">ABOUT EV KNOWMICS</span>
+            <h2>Built Around Real People, Proven Physics &amp; Transparent Economics</h2>
+            <p class="about-lead">EV KNOWMICS was founded on a simple conviction: transitioning to electric mobility shouldn't require guesswork about real-world range, charging speeds, or total ownership cost.</p>
+            <p>Our engineers pair ultra-efficient 900V silicon-carbide drivetrains with intelligent cabin software and honest telemetry—so families, daily commuters, and long-distance tourers experience effortless electric driving from day one.</p>
+
+            <div class="about-kpi-grid">
+              <div class="about-kpi">
+                <strong>48,500+</strong>
+                <span>Active Drivers Worldwide</span>
+              </div>
+              <div class="about-kpi">
+                <strong>4.9 / 5.0</strong>
+                <span>Verified Owner Satisfaction</span>
+              </div>
+              <div class="about-kpi">
+                <strong>140+</strong>
+                <span>Solar 350 kW Charging Hubs</span>
+              </div>
+              <div class="about-kpi">
+                <strong>98.4%</strong>
+                <span>WLTP Real-World Accuracy</span>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <button class="btn btn-primary ask-model-btn" data-prompt="Tell me about EV Knowmics company mission, warranty coverage, and charging network." type="button">
+                Ask AI About EV Knowmics
+              </button>
+              <a href="#ratings" class="btn btn-outline">See Owner Ratings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. LINEUP CAROUSEL SLIDER -->
+    <section class="section" id="lineup">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">INTERACTIVE CAR LINEUP SLIDER</span>
+            <h2>Explore Realistic EV Models &amp; Trims</h2>
+            <p class="section-desc">Filter by body style, check verified owner ratings, and slide through our full electric fleet.</p>
+          </div>
+          <div class="carousel-controls-wrap">
+            <div class="filter-tabs" role="tablist" aria-label="Vehicle Categories">
+              <button class="filter-tab is-active" data-filter="all" type="button">All Models</button>
+              <button class="filter-tab" data-filter="sedan" type="button">Sedans</button>
+              <button class="filter-tab" data-filter="suv" type="button">SUVs</button>
+              <button class="filter-tab" data-filter="compact" type="button">Urban</button>
+            </div>
+            <div class="carousel-arrows">
+              <button class="icon-btn" id="lineupPrev" type="button" aria-label="Slide Left">&#8592;</button>
+              <button class="icon-btn" id="lineupNext" type="button" aria-label="Slide Right">&#8594;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lineup-viewport">
+          <div class="lineup-track" id="lineupTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. INTERACTIVE FULL SPECIFICATIONS STUDIO -->
+    <section class="section section-alt" id="specifications">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">TECHNICAL SPECIFICATIONS EXPLORER</span>
+            <h2>Complete Engineering &amp; Spec Breakdown</h2>
+            <p class="section-desc">Select any EV Knowmics model to inspect verified battery chemistry, charging curves, dimensions, aerodynamics, and AI safety hardware.</p>
+          </div>
+          <div class="spec-tabs" id="specModelTabs" role="tablist" aria-label="Select Model Specifications">
+            <button class="spec-tab is-active" data-spec-id="apex-gt" type="button">Apex GT</button>
+            <button class="spec-tab" data-spec-id="terra-x" type="button">Terra X</button>
+            <button class="spec-tab" data-spec-id="pulse-one" type="button">Pulse One</button>
+            <button class="spec-tab" data-spec-id="apex-gt-touring" type="button">GT Touring</button>
+          </div>
+        </div>
+
+        <div class="spec-studio-grid" id="specStudioPanel">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROMOTIONS & LIMITED-TIME DEALS -->
+    <section class="section" id="promotions">
+      <div class="container">
+        <div class="promo-hero-banner">
+          <div class="promo-bg" data-pixel-bg="assets/pixel-promo-banner.jpg" data-photo-bg="assets/promo-showroom-banner.jpg" style="background-image: url('assets/pixel-promo-banner.jpg')"></div>
+          <div class="promo-scrim"></div>
+          <div class="promo-banner-content">
+            <div class="promo-top-tags">
+              <span class="pill pill-gold">SEASONAL SHOWROOM EVENT</span>
+              <span class="pill pill-emerald">SAVE UP TO $8,500 COMBINED</span>
+            </div>
+            <h2>Drive Electric Today with <span class="accent-gradient-gold">0% APR</span> &amp; Launch Incentives</h2>
+            <p>Reserve any 2026 EV Knowmics vehicle before the timer ends to lock in zero-interest financing, complimentary fast charging, and a free home smart wallbox.</p>
+
+            <div class="countdown-row" id="promoCountdown" aria-label="Promotion countdown timer">
+              <div class="cd-box"><strong id="cdDays">14</strong><span>Days</span></div>
+              <div class="cd-box"><strong id="cdHours">08</strong><span>Hours</span></div>
+              <div class="cd-box"><strong id="cdMins">42</strong><span>Mins</span></div>
+              <div class="cd-box"><strong id="cdSecs">19</strong><span>Secs</span></div>
+            </div>
+
+            <div class="hero-cta-row">
+              <button class="btn btn-gold ask-model-btn" data-prompt="What current promotions, 0% APR financing, and tax credits are available on EV Knowmics cars?" type="button">
+                Ask AI About Deals &amp; Eligibility
+              </button>
+              <a href="#economics" class="btn btn-outline">Estimate Monthly Savings</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-cards-grid">
+          <article class="promo-offer-card">
+            <span class="pill pill-gold">FINANCE OFFER</span>
+            <h3>0% APR for 36 Months</h3>
+            <p>Qualified buyers enjoy zero interest over 36 months plus a $5,000 Clean Mobility Launch Bonus applied directly at checkout.</p>
+            <button class="btn btn-ghost btn-sm ask-model-btn" data-prompt="Explain the 0% APR 36-month financing and $5,000 launch bonus on EV Knowmics vehicles." type="button">Check Eligibility &rarr;</button>
+          </article>
+          <article class="promo-offer-card">
+            <span class="pill pill-cyan">CHARGING PERK</span>
+            <h3>3 Years Free HyperCharge</h3>
+            <p>Unlimited complimentary 350 kW DC fast charging across 140+ EV Knowmics Solar Lounges and partner NACS/CCS2 corridors.</p>
+            <button class="btn btn-ghost btn-sm ask-model-btn" data-prompt="How does the 3 years of free 350 kW HyperCharge network access work?" type="button">Learn More &rarr;</button>
+          </article>
+          <article class="promo-offer-card">
+            <span class="pill pill-emerald">HOME ENERGY</span>
+            <h3>Free 11 kW Smart Wallbox</h3>
+            <p>Includes a bidirectional-ready Level 2 home charger plus up to $1,500 installation credit so you wake up with 100% range every day.</p>
+            <button class="btn btn-ghost btn-sm ask-model-btn" data-prompt="Tell me about the complimentary 11 kW home wallbox and installation credit." type="button">Home Setup Details &rarr;</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BIG SPECIFICATION BANNERS -->
+    <section class="section section-alt" id="big-banners">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">BIG SPECIFICATION BANNERS</span>
+            <h2>High-Impact Engineering Banners</h2>
+            <p class="section-desc">Widescreen architectural specification banners showcasing EV Knowmics charging speed, aerodynamics, and bidirectional home energy.</p>
+          </div>
+        </div>
+
+        <div class="big-banners-stack">
+          <div class="big-spec-banner banner-cyan-theme">
+            <div class="big-banner-grid">
+              <div class="big-banner-copy">
+                <span class="pill pill-cyan">BIG BANNER 01 &bull; 900V HYPERCHARGE</span>
+                <h3>900V Solid-Core HyperCharge Architecture</h3>
+                <p>Silicon-carbide dual inverters and active liquid-cooled cell channels unlock 400 km of highway range in the time it takes to grab an espresso.</p>
+                <button class="btn btn-primary btn-sm ask-model-btn" data-prompt="Explain how 900V EV charging architecture works and how fast 350 kW charging is." type="button">Ask AI: How 900V Works</button>
+              </div>
+              <div class="big-banner-metrics">
+                <div class="metric-tile"><span class="metric-num">12 <small>min</small></span><span class="metric-label">10% to 80% DC Charge</span></div>
+                <div class="metric-tile"><span class="metric-num">350 <small>kW</small></span><span class="metric-label">Peak Charge Rate</span></div>
+                <div class="metric-tile"><span class="metric-num">94.2<small>%</small></span><span class="metric-label">Inverter Efficiency</span></div>
+                <div class="metric-tile"><span class="metric-num">3,000<small>+</small></span><span class="metric-label">Cycle Battery Life</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="big-spec-banner banner-emerald-theme">
+            <div class="big-banner-grid">
+              <div class="big-banner-copy">
+                <span class="pill pill-emerald">BIG BANNER 02 &bull; AERO &amp; DYNAMICS</span>
+                <h3>Active Aero &amp; Neural Torque Vectoring</h3>
+                <p>Flush magnetic door handles, active front louver shutters, and a flat carbon undertray slice drag to 0.198 Cd while sampling wheel grip 1,000 times/sec.</p>
+                <button class="btn btn-primary btn-sm ask-model-btn" data-prompt="How does aerodynamics (Cd) and regenerative braking improve EV driving range?" type="button">Ask AI: Aero &amp; Regen</button>
+              </div>
+              <div class="big-banner-metrics">
+                <div class="metric-tile"><span class="metric-num">0.198 <small>Cd</small></span><span class="metric-label">Drag Coefficient</span></div>
+                <div class="metric-tile"><span class="metric-num">1,120 <small>HP</small></span><span class="metric-label">Tri-Motor Peak Output</span></div>
+                <div class="metric-tile"><span class="metric-num">320 <small>kW</small></span><span class="metric-label">Regenerative Braking</span></div>
+                <div class="metric-tile"><span class="metric-num">42 <small>TOPS</small></span><span class="metric-label">L2+ AI Co-Pilot Compute</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="big-spec-banner banner-gold-theme">
+            <div class="big-banner-grid">
+              <div class="big-banner-copy">
+                <span class="pill pill-gold">BIG BANNER 03 &bull; V2H HOME BACKUP</span>
+                <h3>Your Vehicle Is a Mobile Grid Asset</h3>
+                <p>Charge during cheap off-peak solar hours and power your home during evening tariffs or grid outages with 9.6 kW bidirectional V2H &amp; V2G intelligence.</p>
+                <button class="btn btn-gold btn-sm ask-model-btn" data-prompt="What is V2H and V2G bidirectional charging, and how many days can an EV power a house?" type="button">Ask AI: V2H Home Power</button>
+              </div>
+              <div class="big-banner-metrics">
+                <div class="metric-tile"><span class="metric-num">120 <small>kWh</small></span><span class="metric-label">Mobile Storage Capacity</span></div>
+                <div class="metric-tile"><span class="metric-num">9.6 <small>kW</small></span><span class="metric-label">Home Backup Output</span></div>
+                <div class="metric-tile"><span class="metric-num">4 <small>Days</small></span><span class="metric-label">Avg Home Outage Backup</span></div>
+                <div class="metric-tile"><span class="metric-num">42<small>%</small></span><span class="metric-label">5-Year TCO Reduction</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CUSTOMER RATINGS & REAL DRIVER STORIES SLIDER -->
+    <section class="section" id="ratings">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">VERIFIED OWNER RATINGS &amp; REVIEWS</span>
+            <h2>Rated 4.9 / 5.0 by Real EV Drivers</h2>
+            <p class="section-desc">Real-world feedback from daily commuters, road-trippers, and families logging millions of zero-emission kilometers.</p>
+          </div>
+          <div class="carousel-arrows">
+            <button class="icon-btn" id="reviewPrev" type="button" aria-label="Previous Review">&#8592;</button>
+            <button class="icon-btn" id="reviewNext" type="button" aria-label="Next Review">&#8594;</button>
+          </div>
+        </div>
+
+        <div class="ratings-layout">
+          <div class="rating-summary-card">
+            <div class="rating-big-score">
+              <strong>4.9</strong>
+              <div>
+                <div class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <span>Based on 12,480 Verified Owners</span>
+              </div>
+            </div>
+            <div class="rating-bars">
+              <div class="rbar-row"><span>Real-World Range Accuracy</span><div class="rbar"><i style="width:98%"></i></div><strong>4.9</strong></div>
+              <div class="rbar-row"><span>Fast Charging Reliability</span><div class="rbar"><i style="width:98%"></i></div><strong>4.9</strong></div>
+              <div class="rbar-row"><span>Cabin Comfort &amp; AI Co-Pilot</span><div class="rbar"><i style="width:96%"></i></div><strong>4.8</strong></div>
+              <div class="rbar-row"><span>5-Year Cost &amp; Economics</span><div class="rbar"><i style="width:100%"></i></div><strong>5.0</strong></div>
+            </div>
+            <button class="btn btn-outline btn-sm ask-model-btn" data-prompt="What do verified EV Knowmics owners say in real-world ratings and long-term reviews?" type="button">
+              Ask AI for Owner Review Summary
+            </button>
+          </div>
+
+          <div class="reviews-viewport">
+            <div class="reviews-track" id="reviewsTrack">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INTERACTIVE EV ECONOMICS & RANGE SLIDERS -->
+    <section class="section section-alt" id="economics">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">INTERACTIVE RANGE &amp; TCO SLIDERS</span>
+            <h2>Calculate Your Electric Advantage</h2>
+            <p class="section-desc">Slide your daily distance, electricity rate, and fuel price to calculate real 5-year savings across EV Knowmics models.</p>
+          </div>
+        </div>
+
+        <div class="economics-panel">
+          <div class="econ-controls">
+            <div class="econ-model-select">
+              <span class="control-label">Select Reference Model</span>
+              <div class="model-pills" id="econModelPills">
+                <button class="model-pill is-active" data-consumption="12.8" data-battery="76" data-name="Pulse One" type="button">Pulse One (12.8 kWh/100km)</button>
+                <button class="model-pill" data-consumption="15.9" data-battery="118" data-name="Terra X" type="button">Terra X (15.9 kWh/100km)</button>
+                <button class="model-pill" data-consumption="14.6" data-battery="120" data-name="Apex GT" type="button">Apex GT (14.6 kWh/100km)</button>
+              </div>
+            </div>
+
+            <div class="range-slider-group">
+              <div class="range-header">
+                <label for="dailyKmSlider">Daily Driving Distance</label>
+                <output id="dailyKmVal" for="dailyKmSlider">55 km/day</output>
+              </div>
+              <input type="range" id="dailyKmSlider" min="10" max="250" value="55" step="5" />
+              <div class="range-ticks"><span>10 km</span><span>130 km</span><span>250 km</span></div>
+            </div>
+
+            <div class="range-slider-group">
+              <div class="range-header">
+                <label for="elecRateSlider">Home Electricity Rate</label>
+                <output id="elecRateVal" for="elecRateSlider">$0.14 / kWh</output>
+              </div>
+              <input type="range" id="elecRateSlider" min="0.05" max="0.45" value="0.14" step="0.01" />
+              <div class="range-ticks"><span>$0.05</span><span>$0.25</span><span>$0.45</span></div>
+            </div>
+
+            <div class="range-slider-group">
+              <div class="range-header">
+                <label for="gasPriceSlider">Compared Petrol / Gas Price</label>
+                <output id="gasPriceVal" for="gasPriceSlider">$1.45 / L</output>
+              </div>
+              <input type="range" id="gasPriceSlider" min="0.80" max="2.60" value="1.45" step="0.05" />
+              <div class="range-ticks"><span>$0.80/L</span><span>$1.70/L</span><span>$2.60/L</span></div>
+            </div>
+          </div>
+
+          <div class="econ-results">
+            <div class="econ-highlight-card">
+              <span class="econ-kicker">ESTIMATED 5-YEAR SAVINGS (FUEL + MAINTENANCE)</span>
+              <strong class="econ-big-number" id="econFiveYearSavings">$14,820</strong>
+              <p class="econ-note" id="econSummaryText">Driving 20,075 km/year in the Pulse One saves ~84% on energy plus ~$650/yr in maintenance.</p>
+            </div>
+
+            <div class="econ-stat-grid">
+              <div class="econ-stat-box"><span class="stat-label">Annual Fuel Savings</span><strong class="stat-val" id="econAnnualSavings">$2,314</strong></div>
+              <div class="econ-stat-box"><span class="stat-label">Cost per 100 km</span><strong class="stat-val" id="econCostPer100">$1.79</strong></div>
+              <div class="econ-stat-box"><span class="stat-label">Charges Needed</span><strong class="stat-val" id="econChargeFreq">Every 10 days</strong></div>
+              <div class="econ-stat-box"><span class="stat-label">CO₂ Avoided / Yr</span><strong class="stat-val" id="econCo2Saved">3,410 kg</strong></div>
+            </div>
+
+            <button class="btn btn-primary" id="askAiSavingsBtn" type="button">Ask KnoBot AI to Explain My Breakdown</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. BRAND IDENTITY & REFINED 3D LOGO SHOWCASE -->
+    <section class="section" id="brand-identity">
+      <div class="container">
+        <div class="brand-showcase-grid">
+          <div class="brand-artwork-card">
+            <img src="assets/logo-pixel-ev-knowmics.jpg" data-pixel-src="assets/logo-pixel-ev-knowmics.jpg" data-photo-src="assets/logo-ev-knowmics-v2.jpg" alt="EV KNOWMICS winged shield emblem with glowing cyan-emerald lightning core" loading="lazy" />
+            <div class="brand-artwork-caption">Official Winged Lightning Crest — EV KNOWMICS HD Pixel &amp; Platinum Series</div>
+          </div>
+          <div class="brand-spec-copy">
+            <span class="eyebrow">UPGRADED BRAND &amp; LOGO DESIGN</span>
+            <h2>The EV KNOWMICS Crest</h2>
+            <p>Sculpted to embody <strong>Precision Engineering</strong>, <strong>Clean Economics</strong>, and <strong>Executive Presence</strong> on every hood and digital interface.</p>
+            <ul class="brand-pillars">
+              <li><strong>Brushed Platinum Hex Shield:</strong> Mirrors rigid structural battery protection and zero-compromise crash safety.</li>
+              <li><strong>Cyan-Emerald Crystal Core:</strong> Represents clean 900V high-density energy flowing with zero tailpipe emissions.</li>
+              <li><strong>Sculpted Twin Aero Wings:</strong> Symbolizes active 0.198 Cd aerodynamics and effortless grand-touring speed.</li>
+            </ul>
+            <div class="color-swatches">
+              <div class="swatch"><span class="swatch-dot" style="background:#00E5FF"></span><code>#00E5FF</code> Electric Cyan</div>
+              <div class="swatch"><span class="swatch-dot" style="background:#10B981"></span><code>#10B981</code> Emerald Volt</div>
+              <div class="swatch"><span class="swatch-dot" style="background:#F59E0B"></span><code>#F59E0B</code> Trophy Gold</div>
+              <div class="swatch"><span class="swatch-dot" style="background:#06080D"></span><code>#06080D</code> Carbon Obsidian</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. EMBEDDED AI CHATBOT COMMAND CENTER -->
+    <section class="section section-alt" id="ai-advisor">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">KNOBOT &bull; EV AI CHATBOT</span>
+            <h2>Ask Any Question About Electric Vehicles</h2>
+            <p class="section-desc">Get instant answers on specs, pricing, promotions, winter range, charging math, owner ratings, or EV vs petrol comparisons.</p>
+          </div>
+        </div>
+
+        <div class="inline-chat-shell">
+          <aside class="chat-sidebar">
+            <h4>Popular EV Questions</h4>
+            <p class="sidebar-hint">Tap a topic to ask KnoBot immediately:</p>
+            <div class="quick-prompt-list" id="inlineQuickPrompts">
+              <button class="prompt-chip" data-prompt="Compare Apex GT vs Terra X vs Pulse One" type="button">Compare Apex GT vs Terra X</button>
+              <button class="prompt-chip" data-prompt="What promotions and 0% APR deals are active right now?" type="button">0% APR &amp; $5k Promo Deals</button>
+              <button class="prompt-chip" data-prompt="What do verified owners say in EV Knowmics ratings?" type="button">4.9/5 Owner Ratings Summary</button>
+              <button class="prompt-chip" data-prompt="How does cold winter weather affect EV range?" type="button">Winter range &amp; heat pumps</button>
+              <button class="prompt-chip" data-prompt="LFP vs NMC vs Solid-State batteries: which is better?" type="button">LFP vs NMC vs Solid-State</button>
+              <button class="prompt-chip" data-prompt="How much does it cost to charge an 80 kWh EV at $0.15/kWh?" type="button">Calculate charging cost</button>
+              <button class="prompt-chip" data-prompt="Can I book a test drive or reserve a model?" type="button">Book a Test Drive</button>
+              <button class="prompt-chip" data-prompt="Are EVs really cheaper than petrol cars over 5 years?" type="button">EV vs Petrol 5-year TCO</button>
+            </div>
+          </aside>
+
+          <div class="chat-main" id="inlineChatContainer">
+            <div class="chat-header-bar">
+              <div class="chat-agent-meta">
+                <div class="ai-avatar">AI</div>
+                <div>
+                  <strong>KnoBot EV Advisor</strong>
+                  <span class="ai-status"><span class="pulse-dot"></span> Online &bull; Specs, Promos &amp; Economics Engine</span>
+                </div>
+              </div>
+              <button class="btn btn-ghost btn-sm" id="clearInlineChatBtn" type="button">Reset Chat</button>
+            </div>
+
+            <div class="chat-messages" id="inlineChatMessages" aria-live="polite"></div>
+
+            <form class="chat-input-bar" id="inlineChatForm">
+              <input type="text" id="inlineChatInput" placeholder="Ask anything: e.g. 'Tell me about the 0% APR promo' or 'Compare Terra X specs'" autocomplete="off" required />
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>EV KNOWMICS</strong>
+        <span>Precision Electric Mobility &amp; Transparent Economics</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#lineup">Cars</a>
+        <a href="#specifications">Specs</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#ratings">Ratings</a>
+        <a href="#ai-advisor">AI Chatbot</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 EV KNOWMICS Automotive Studio. Built with HTML5, CSS3 &amp; KnoBot AI.</p>
+    </div>
+  </footer>
+
+  <!-- Spec Comparison Modal -->
+  <div class="modal-backdrop" id="compareModal" hidden role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="compareModalTitle">EV KNOWMICS — Side-by-Side Spec Matrix</h3>
+        <button class="icon-btn" id="closeCompareBtn" type="button" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="table-scroll">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Specification</th>
+              <th>Apex GT</th>
+              <th>Apex GT Touring</th>
+              <th>Terra X</th>
+              <th>Pulse One</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Body Style</td><td>Performance Sedan</td><td>Executive Grand Tourer</td><td>7-Seat All-Terrain SUV</td><td>Urban Smart Crossover</td></tr>
+            <tr><td>Owner Rating</td><td>&#9733; 4.9 / 5</td><td>&#9733; 4.9 / 5</td><td>&#9733; 4.9 / 5</td><td>&#9733; 4.8 / 5</td></tr>
+            <tr><td>WLTP Range</td><td>820 km</td><td>860 km</td><td>740 km</td><td>560 km</td></tr>
+            <tr><td>Battery Pack</td><td>120 kWh Solid-Core</td><td>120 kWh Aero Spec</td><td>118 kWh High-Density</td><td>76 kWh Long-Life LFP</td></tr>
+            <tr><td>Powertrain</td><td>1,120 HP Tri-Motor</td><td>760 HP Dual-Motor</td><td>840 HP Dual-Motor</td><td>310 HP Rear-Drive</td></tr>
+            <tr><td>0–100 km/h</td><td>1.98 sec</td><td>2.8 sec</td><td>3.1 sec</td><td>5.4 sec</td></tr>
+            <tr><td>Peak DC Charge</td><td>350 kW (12 min)</td><td>350 kW (13 min)</td><td>320 kW (15 min)</td><td>220 kW (18 min)</td></tr>
+            <tr><td>Drag Coefficient</td><td>0.198 Cd</td><td>0.194 Cd</td><td>0.220 Cd</td><td>0.235 Cd</td></tr>
+            <tr><td>V2H Home Backup</td><td>9.6 kW V2H / V2L</td><td>9.6 kW V2H / V2L</td><td>9.6 kW V2H / V2G</td><td>3.6 kW V2L</td></tr>
+            <tr><td>Starting MSRP</td><td>$78,900</td><td>$69,400</td><td>$64,500</td><td>$34,900</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating AI Chatbot Drawer -->
+  <div class="floating-chat-wrap" id="floatingChatWrap">
+    <div class="floating-chat-panel" id="floatingChatPanel" hidden>
+      <div class="chat-header-bar">
+        <div class="chat-agent-meta">
+          <div class="ai-avatar">AI</div>
+          <div>
+            <strong>KnoBot AI</strong>
+            <span class="ai-status"><span class="pulse-dot"></span> Instant EV Answers</span>
+          </div>
+        </div>
+        <button class="icon-btn" id="closeFloatingChatBtn" type="button" aria-label="Minimize Chatbot">&times;</button>
+      </div>
+      <div class="chat-messages floating-messages" id="floatingChatMessages" aria-live="polite"></div>
+      <div class="floating-chips" id="floatingChips">
+        <button class="mini-chip" data-prompt="What promotions and 0% APR deals are active right now?" type="button">0% APR Deals</button>
+        <button class="mini-chip" data-prompt="Compare Apex GT vs Terra X vs Pulse One" type="button">Compare Cars</button>
+        <button class="mini-chip" data-prompt="What do verified owners say in EV Knowmics ratings?" type="button">Owner Ratings</button>
+      </div>
+      <form class="chat-input-bar" id="floatingChatForm">
+        <input type="text" id="floatingChatInput" placeholder="Ask any EV question..." autocomplete="off" required />
+        <button class="btn btn-primary btn-sm" type="submit">Ask</button>
+      </form>
+    </div>
+
+    <button class="floating-chat-fab" id="floatingChatFab" type="button" aria-label="Open EV AI Chatbot">
+      <span class="fab-icon">&#9889;</span>
+      <span class="fab-label">Ask EV AI</span>
+    </button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
